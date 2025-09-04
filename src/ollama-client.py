@@ -60,7 +60,7 @@ async def main():
         msg = input(">")
         if msg.lower() == "exit":
             break
-        resp = await handle_user_message(msg,agent,context) 
+        resp = await handle_user_message(msg,agent,context,verbose=True) 
         print("Agent:",resp)
 
 if __name__ == "__main__":

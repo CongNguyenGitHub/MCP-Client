@@ -22,3 +22,4 @@ def read_data(query:str ="SELECT * FROM people") -> list:
 
 if __name__ == "__main__":
     print("Starting server...")
+    mcp.run(transport="sse")
